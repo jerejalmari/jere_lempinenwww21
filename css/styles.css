@@ -1,0 +1,19 @@
+body {
+    background-color: rgb(178, 231, 231);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+    color: rgb(29, 27, 27);
+    margin-left: 15px;
+}
+a:link {
+    color: firebrick;
+    text-decoration-color: rgb(228, 255, 78);
+}
+a:visited {
+    color: mediumorchid;
+    text-decoration-color: salmon ;
+}
+a:hover {
+    font-size: larger;
+    color-adjust: red;
+}
