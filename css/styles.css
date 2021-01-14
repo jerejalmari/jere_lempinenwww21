@@ -15,4 +15,5 @@ a:visited {
 }
 a:hover {
     font-size: larger;
+    text-decoration-color: darkblue;
 }
