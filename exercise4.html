@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flexContainer {
+        display: flex;
+        flex-wrap: nowrap;
+        background-color: rgb(53, 205, 216);
+        justify-content: flex-start;
+      }
+      .flexboxItem {
+          width: max-content;
+          line-height: 30px;
+      }
+      .flexItem1 {
+        text-align: center;
+        min-height: 100px;
+        background-color: cadetblue;
+        line-height: 100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: rgb(155, 4, 84);
+        
+      }
+      .flexItem2 {
+          height:auto;
+          min-width: 150px;
+          background-color: rgb(205, 223, 43);
+          border: black 2px solid;
+      }
+      .flexItem3 {
+          background-color: ghostwhite;
+          border: 2px solid black;
+      }
+      .flexItem3 > p , .flexItem3 > h2 {
+          margin: 5px;
+      }
+      .flexItem4 {
+        align-self: flex-end;
+      }
+      .flexItem4 > img {
+          height: auto;
+          width: 100%;
+          max-width: 400px;
+          border: 2px solid black;
+      }
+      ul {
+          list-style: none;
+      }
+    </style>
+</head>
+<body>
+    <div class="flexContainer">
+        <header class="flexboxItem flexItem1" style="flex-grow: 1;">
+            <h1>Totally awesome waifu site</h1>
+        </header>
+    </div>
+    <div class="flexContainer">
+        <nav class="flexboxItem flexItem2">
+            <ul>
+                <li><a href="https://myanimelist.net/" target="_blank" >Anime</a></li>
+            </ul>
+        </nav>
+        <article class="flexboxItem flexItem3">
+            <h2>A fine christmas song</h2>
+            <p>Listen to it, very good, promise. </p>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/vJ3jNTH2QL0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Also there are not any waifus here I lied. <br>
+                Merry Christmas.</p> 
+        </article>
+        <figure class="flexItem4">
+        <img src="images/animegirl.png" alt="Anime girl">
+        <figcaption>A fine looking anime girl</figcaption>
+        </figure> 
+        <figure class="flexItem4">
+        <img src="images/redhead.jpg" alt="redhead">
+        <figcaption style="float: inline-end;">Red thing on head</figcaption>
+        </figure>   
+    </div>
+    <div class="flexContainer">
+        <footer class="flexboxItem flexItem1" style="flex-grow: 1;">
+            <p>Thank you for visiting this page</p>
+        </footer>
+    </div>
+    
+    
+</body>
+</html>
